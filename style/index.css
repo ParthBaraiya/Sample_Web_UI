@@ -1,0 +1,526 @@
+footer {
+  justify-content: space-evenly;
+}
+
+div#orientation {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: rgba(42, 42, 42, 0.8);
+  font-size: 3em;
+  z-index: 1001;
+}
+
+div#welcome-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+div#start-loader {
+  z-index: 1000;
+}
+
+header {
+  display: inline-flex;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -ms-background-attachment: fixed;
+  background-attachment: fixed;
+  background-size: 100% 130%;
+  background-repeat: repeat-y;
+  background-image: url("../Images/intro-img-3-bw-small.jpg");
+  color: white;
+}
+
+div#get-started-intro {
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(42, 42, 42, 0.7);
+  box-shadow: inset 0px 0px 50px black;
+}
+
+div#get-started-intro div#acknowledgement,
+div#get-started-intro div#start-trial-text {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: white;
+  font-size: 2.2em;
+}
+
+div#get-started-intro div#start-trial-text {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+div#get-started-intro div#logo-container {
+  flex-wrap: nowrap !important;
+  align-items: center;
+}
+
+div#get-started-intro div#logo-container div:nth-child(1) {
+  display: block;
+  background-image: url("../assets/logo-final.png");
+  background-size: 100% 100%;
+  height: 200px;
+  width: 200px;
+}
+
+div#get-started-intro div#logo-container div:nth-child(2) {
+  display: inline;
+  font-size: 4em;
+  text-shadow: 0px 0px 10px black;
+  margin-left: 50px;
+}
+
+div#menu-buttons > button {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+section > article {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+section > article:nth-child(1) {
+  margin-top: 20px;
+}
+
+section > article:nth-child(1) div {
+  width: 100%;
+}
+
+section > article:nth-child(1) * {
+  text-align: center;
+}
+
+section > article div#img {
+  flex-grow: 1.6;
+  min-width: 300px;
+  height: 500px;
+}
+
+article > article {
+  flex-flow: column wrap;
+  flex-grow: 1.4;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-width: 200px;
+  max-width: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+article article#text > div > h1 {
+  padding-bottom: 5px;
+}
+
+article article#text > div:nth-child(2) div {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+article article#text > div:nth-child(3) {
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+article.w-l-article > * {
+  width: 100%;
+}
+
+div.w-l-container {
+  margin-top: 20px;
+  background-color: rgb(240, 240, 240);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div.logos > div,
+div.themes > div {
+  width: 100px;
+  height: auto;
+  margin: 30px;
+}
+
+div.themes > div {
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+
+div.logos > div > div:nth-child(1),
+div.themes > div > div:nth-child(1) {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+div.themes > div > div:nth-child(1) {
+  height: 250px;
+}
+
+div.logos > div > div:nth-child(1):hover {
+  box-shadow: 0px 0px 10px black;
+}
+
+div.themes > div:hover {
+  box-shadow: 0px 0px 20px black;
+}
+
+div.logos > div > div:nth-child(1) > div,
+div.themes > div > div:nth-child(1) > div {
+  height: 100%;
+  width: 100%;
+  transform-origin: center;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(180, 180, 180);
+}
+
+div.logos > div > div:nth-child(1) > div:hover {
+  transform: scale(1.1, 1.1);
+}
+
+div.themes > div > div:nth-child(1) > div:hover {
+  transform: scale(1.1, 1.1);
+}
+
+div.logos > div > div:nth-child(2) {
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration-color: rgb(100, 100, 255);
+  text-decoration: none;
+}
+
+div.logos > div > div:nth-child(2):hover {
+  color: rgb(100, 100, 255);
+  text-decoration: underline;
+}
+
+div.themes > div > div:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+div.themes > div > div:nth-child(2) > span:hover {
+  text-decoration: underline;
+}
+
+section > article > div#thought-of-the-day {
+  background-image: url("../Images/good-thought-img.jpg");
+  background-size: 100% 300%;
+  background-position-y: 0%;
+  background-repeat: repeat-y;
+  width: 100%;
+  box-shadow: inset 0px 0px 20px black;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+}
+
+section > article > div#thought-of-the-day > div {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2em;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+section > article > div#thought-of-the-day > div > div:nth-child(1) {
+  width: 100%;
+  font-size: 1.5em;
+}
+
+section > article > div#thought-of-the-day > div > div:nth-child(1) span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 7px;
+}
+
+section > article > div#thought-of-the-day > div > div:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+section > article > div#thought-of-the-day > div > div:nth-child(3) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: flex-end !important;
+  width: 55%;
+}
+
+section > article#know-more-art {
+  background-image: url("../Images/know-more-img.jpg");
+  background-size: 100% 100%;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -ms-background-attachment: fixed;
+  background-attachment: fixed;
+  color: white;
+}
+
+section > article#know-more-art > div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0px 0px 12px black;
+}
+
+section > article#know-more-art > div > div {
+  width: 100%;
+  margin-bottom: 50px;
+  justify-content: space-evenly;
+}
+
+section > article#know-more-art > div > div:nth-child(2) > div {
+  background-color: transparent;
+  margin: 10px;
+  padding: 20px;
+  border: solid 2px rgb(100, 100, 255);
+  color: rgb(100, 100, 255);
+  transition: all 0.3s ease-in-out;
+  width: 100px;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+section > article#know-more-art > div > div:nth-child(2) > div:hover {
+  background-color: rgba(100, 100, 255, 1);
+  color: white;
+  transform-origin: center;
+  transform: scale(1.1, 1.1);
+}
+
+section > article#know-more-art > div > div:nth-child(2) > div > div {
+  width: 100%;
+}
+
+section
+  > article#know-more-art
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-child(1) {
+  padding-bottom: 10px;
+}
+
+section
+  > article#know-more-art
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-child(1)
+  > div {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  background-size: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+section > article#c-f-form {
+  background-image: url("../Images/intro-img-1-s.jpg");
+  background-size: 100% 130%;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -ms-background-attachment: fixed;
+  background-attachment: fixed;
+  color: white;
+}
+
+section > article#c-f-form > div {
+  background-color: rgba(42, 42, 42, 0.5);
+  box-shadow: inset 0px 0px 30px black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+section > article#c-f-form > div > div {
+  justify-content: flex-start !important;
+}
+
+section > article#c-f-form > div > div:nth-child(1) {
+  flex-grow: 3;
+  min-width: 300px;
+  max-width: auto;
+  margin-bottom: 30px;
+}
+
+section > article#c-f-form > div > div:nth-child(1) > div {
+  margin-left: 50px;
+}
+
+section > article#c-f-form > div > div:nth-child(2) {
+  flex-grow: 5;
+  min-width: 300px;
+  margin-bottom: 30px;
+}
+
+div.social-contact {
+  flex-wrap: nowrap;
+  margin-bottom: 15px;
+}
+
+div.social-contact:nth-child(1) > div:nth-child(2) {
+  width: 100%;
+}
+
+div.social-contact:nth-child(1) > div:nth-child(2) > span {
+  padding-bottom: 5px;
+}
+
+div.social-contact > div:nth-child(1) {
+  height: 25px;
+  width: 25px;
+  /*background-color: black;*/
+  margin-right: 10px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+div.social-contact > div:nth-child(2) span {
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+div.social-contact > div:nth-child(2) span:hover {
+  color: rgba(100, 100, 255, 0.5);
+}
+
+div.f-con > div {
+  align-items: center;
+  margin-left: 30px;
+}
+div.f-con > div:nth-child(3) > input {
+  min-width: 300px;
+}
+
+div.f-con > div:nth-child(4) > textarea {
+  max-width: 500px;
+  min-width: 250px;
+  height: 110px;
+}
+
+footer > div#copyright {
+  margin-top: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 576.001px) {
+  div.f-con > div:nth-child(3) > input {
+    width: 400px !important;
+  }
+
+  div.f-con > div:nth-child(4) > textarea {
+    width: 500px !important;
+  }
+}
+
+/*Applies when width of window is greater than 1010*/
+@media screen and (max-width: 1010px) {
+  section > article div#img {
+    height: 600px;
+  }
+
+  article > article {
+    max-width: 100%;
+  }
+
+  section > article > article#text div#details-button {
+    justify-content: center;
+  }
+}
+
+/*Applies when width of window is less than 576px*/
+@media screen and (max-width: 576px) {
+  div.f-con > div {
+    width: 100%;
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  div.f-con > div > input:not([type="button"]),
+  div.f-con > div > textarea {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 923px) {
+  section > article#c-f-form > div > div {
+    justify-content: center !important;
+    margin-left: 0px;
+  }
+
+  div.f-con > div {
+    margin-left: 0px;
+  }
+
+  section > article#c-f-form > div > div:nth-child(1) > div {
+    margin-left: 0px;
+  }
+}
+
+/*Applies when width of window is greater than 709px and less than 859px*/
+@media screen and (max-width: 709px) {
+  div#get-started-intro div#acknowledgement {
+    font-size: 1.4em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  div#get-started-intro div#start-trial-text {
+    font-size: 1em;
+  }
+
+  section > article div#img {
+    height: 400px;
+  }
+}
+
+/*Applies when width of window is less than 584px*/
+@media screen and (max-width: 600px) {
+  div#get-started-intro div#logo-container div:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  section > article#know-more-art > div > div:nth-child(2) {
+    flex-flow: column wrap;
+  }
+
+  section > article#know-more-art > div > div:nth-child(2) > div {
+    width: 130px;
+    max-width: 130px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section > article div#img {
+    height: 300px;
+  }
+}
+
+/*Applies when orientation of mobile phones is in landscape mode*/
+@media screen and (orientation: landscape) and (max-width: 650px) {
+  div#orientation {
+    display: flex;
+  }
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        SiteMaker
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js/"></script>
+        <![endif]-->
+
+    <link rel="icon" href="assets/favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="./style/index-images-min.css" />
+    <style type="text/css"></style>
+
+
+    <script type="text/javascript" src="script/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        var loaded = false;
+
+        function loadScripts() {
+            var scriptLoad = document.createElement("script");
+            scriptLoad.type = "text/javascript";
+            scriptLoad.src = "./main.js";
+            scriptLoad.id = "main_script";
+            document.body.appendChild(scriptLoad);
+            var scriptLoad = document.createElement("script");
+            scriptLoad.type = "text/javascript";
+            scriptLoad.src = "./script/main.js";
+            scriptLoad.id = "main_page_script";
+            document.body.appendChild(scriptLoad);
+        }
+
+        $(window).on("load", function () {
+
+            $("#start-loader").remove();
+            loaded = true;
+            loadScripts();
+
+            // $("#main_script").on("load", function () { scrollToTop(); });
+            /*$("#main_page_script").on("load", function () {
+                // showWelcomeDilogue();
+                $.ajax({
+                    url: "./PHP/cookies.php",
+                    success: function (result) {
+                        // console.log(result);
+                        if (result != "set") {
+                            showWelcomeDilogue();
+                        }
+                    },
+                    data: "isvisited=true",
+                    type: "POST",
+                });
+            });*/
+
+            /* $("#s_u").on("click", function () {
+                window.location = "./SignUp/";
+            });
+
+
+            $("#start-trial-button").on("click", function () {
+                window.location = "./SignUp/";
+            });
+            $("#explore-button").on("click", function () {
+                window.location = "./menus/";
+            }); */
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="orientation" class="fill-block pos-fix">
+        <span>Please rotate your phone.</span>
+    </div>
+    <div id="welcome-container" class="row-flex"></div>
+
+    <!-- <div id="start-loader" class="loader-container pos-fix" style="display: none;"> -->
+    <div id="start-loader" class="loader-container pos-fix">
+        <div id="loader-img" class="loader"></div>
+        <span>Loading...</span>
+    </div>
+
+    <header class="fill-block-display" id="header">
+
+        <div id="get-started-intro" class="fill-block pos-abs column-flex">
+
+            <div id="logo-container" class="row-flex">
+                <div id="logo"></div>
+                <div class="bottom-60-border">SiteMaker</div>
+            </div>
+
+            <div id="acknowledgement">
+                Promote your business and get your stunning website</br> and logoes with sitemakers.
+            </div>
+
+            <div id="start-trial-text">Start free trial for 30 days.</div>
+
+            <div id="menu-buttons" class="row-flex">
+                <button id="start-trial-button" class="get-started-button" title="trial">Start
+                    Trial</button>
+                <button id="explore-button" class="get-started-button" title="Explore">Explore</button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section>
+
+        <article style="flex-direction: column;">
+            <div id="web-title" class="row-flex">
+                <h1 class="bottom-60-border xxl-h">SITEMAKER</h1>
+            </div>
+            <div id="description" class="l-h row-flex">
+                Put your business online and Create/Buy website for your business.
+            </div>
+        </article>
+
+        <article>
+            <div id="img" class="zoom-wrapper">
+                <div style="background-image: url('Images/ani_img2.jpeg')"></div>
+            </div>
+            <article id="text">
+                <div class="row-flex">
+                    <h1 class="bottom-60-border">CREATE WEBSITE</h1>
+                </div>
+                <div id="detailed-text" class="row-flex">
+                    <div>
+                        Create a website for your business.
+                        There is many templetes that can easily understandable and with user friendly interface.
+                    </div>
+                </div>
+                <div id="details-button" class="row-flex">
+                    <button class="get-started-button">Learn More</button>
+                </div>
+            </article>
+        </article>
+
+        <article style="flex-wrap: wrap-reverse;">
+            <article id="text">
+                <div class="row-flex">
+                    <h1 class="bottom-60-border">BEST LOGOS</h1>
+                </div>
+
+                <div id="detailed-text" class="row-flex">
+                    <div>
+                        Good logo makes good impression.
+                        Choose best logo for your business.
+                        Your first logo is for free.
+                    </div>
+                </div>
+
+                <div id="details-button" class="row-flex">
+                    <button class="get-started-button">Learn More</button>
+                </div>
+            </article>
+            <div id="img" class="zoom-wrapper">
+                <div style="background-image: url('Images/ani_img3.jpeg')"></div>
+            </div>
+        </article>
+
+        <article>
+            <div id="img" class="zoom-wrapper">
+                <div style="background-image: url('Images/ani_img4.jpeg')"></div>
+            </div>
+            <article id="text">
+                <div class="row-flex">
+                    <h1 class="bottom-60-border">BEST THEMES</h1>
+                </div>
+                <div id="detailed-text" class="row-flex">
+                    <div>
+                        There is lots of stunning website themes.
+                        You can choose any of them for your website.
+                    </div>
+                </div>
+                <div id="details-button" class="row-flex">
+                    <button class="get-started-button">Learn More</button>
+                </div>
+            </article>
+        </article>
+
+        <article id="know-more-art">
+            <div class="fill-block column-flex">
+                <div class="row-flex">
+                    <span class="bottom-60-border xl-h">MORE</span>
+                </div>
+                <div class="row-flex">
+                    <div id="c_u" class="column-flex">
+                        <div class="row-flex">
+                            <div class="hover-c-u"></div>
+                        </div>
+                        <div class="row-flex"><span>Contact Us</span></div>
+                    </div>
+                    <div id="s_u" class="column-flex">
+                        <div class="row-flex">
+                            <div class="hover-s-u"></div>
+                        </div>
+                        <div class="row-flex"><span>Sign UP</span></div>
+                    </div>
+                    <div id="bs" class="column-flex">
+                        <div class="row-flex">
+                            <div class="hover-b"></div>
+                        </div>
+                        <div class="row-flex"><span>Blogs</span></div>
+                    </div>
+                    <div id="ls" class="column-flex">
+                        <div class="row-flex">
+                            <div class="hover-l"></div>
+                        </div>
+                        <div class="row-flex"><span>Logos</span></div>
+                    </div>
+                    <div id="ts" class="column-flex">
+                        <div class="row-flex">
+                            <div class="hover-t"></div>
+                        </div>
+                        <div class="row-flex"><span>Themes</span></div>
+                    </div>
+                    <div id="hp" class="column-flex">
+                        <div class="row-flex">
+                            <div class="hover-h"></div>
+                        </div>
+                        <div class="row-flex"><span>Help</span></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="w-l-article column-flex">
+            <div class="row-flex">
+                <span class="bottom-60-border xl-h">
+                    POPULER THEMES
+                </span>
+            </div>
+            <div class="w-l-container themes row-flex align-even">
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Theme-1</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Theme-2</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Theme-3</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Theme-4</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Theme-5</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Theme-6</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="w-l-article column-flex">
+            <div class="row-flex">
+                <span class="bottom-60-border xl-h">LOGOS</span>
+            </div>
+            <div class="w-l-container logos row-flex align-even">
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Logo-1</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Logo-2</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Logo-3</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Logo-4</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Logo-5</span></div>
+                </div>
+                <div class="column-flex">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div class="row-flex"><span>Logo-6</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article id="c-f-form">
+            <div class="fill-block row-flex flex-reverse">
+                <div class="row-flex align-start">
+                    <div>
+                        <div class="social-contact row-flex align-start">
+                            <div style="display: none;"></div>
+                            <div class="l-h row-flex"><span class="bottom-60-border">CONTACT US:</span></div>
+                        </div>
+                        <div class="social-contact row-flex align-start">
+                            <div style="background-image: url('./assets/g_l.svg');"></div>
+                            <div class="row-flex"><span><a class="c-w" target="blank"
+                                        href="https://google.co.in">sitemaker@gmail.com</a></span></div>
+                        </div>
+                        <div class="social-contact row-flex align-start">
+                            <div style="background-image: url('./assets/y_l.svg');"></div>
+                            <div class="row-flex"><span><a class="c-w" target="blank"
+                                        href="https://yahoo.com">sitemaker@yahoo.com</a></span></div>
+                        </div>
+                        <div class="social-contact row-flex align-start">
+                            <div style="background-image: url('./assets/fb.svg');"></div>
+                            <div class="row-flex"><span><a class="c-w" target="blank"
+                                        href="https://facebook.com">www.facebook.com</a></span></div>
+                        </div>
+                        <div class="social-contact row-flex align-start">
+                            <div style="background-image: url('./assets/i_l.svg');"></div>
+                            <div class="row-flex"><span><a class="c-w" target="blank"
+                                        href="https://instagram.com">www.instagram.com</a></span></div>
+                        </div>
+                        <div class="social-contact row-flex align-start">
+                            <div style="background-image: url('./assets/tw.svg');"></div>
+                            <div class="row-flex"><span><a class="c-w" target="blank"
+                                        href="https://twitter.com">www.twitter.com</a></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-flex align-start">
+                    <div class="f-con">
+                        <div class="row-flex align-start">
+                            <input type="text" class="i-t" placeholder="First Name" title="First Name" />
+                            <input type="text" class="i-t" placeholder="Last Name" title="Last Name" />
+                        </div>
+                        <div class="row-flex align-start">
+                            <input type="text" class="i-t" placeholder="Contact No" title="Contact Number" />
+                        </div>
+                        <div class="row-flex align-start">
+                            <input type="email" class="i-t" placeholder="E-Mail" title="E-mail id" />
+                        </div>
+                        <div class="row-flex align-start">
+                            <textarea class="i-t" maxlength="200" title="Your precious feedback."
+                                placeholder="Any Questions? or Feedback (In 200 words.)"></textarea>
+                        </div>
+                        <div class="row-flex align-start">
+                            <input type="button" class="i-t" value="Submit" title="Press to submit your feedback." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <footer class="column-flex">
+
+        <div id="copyright" class="row-flex">
+            <div>&copy;copyright 2019</div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
