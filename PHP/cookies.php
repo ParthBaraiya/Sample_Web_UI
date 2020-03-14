@@ -9,11 +9,7 @@
 
         setCookie($name,$value,$expire,$path,$domain);
 
-        if(isset($_COOKIE["data"])){
-            echo "true";
-        } else {
-            echo "false";
-        }   
+        echo "" . isset($_COOKIE["data"]);
     } else {
         echo "set";
     }
